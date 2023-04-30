@@ -1,80 +1,76 @@
 body{
     position: relative;
-    width: 1440px;
-    height: 1024px;
+    width: auto;
+    height: 100%;
     background-color: white;
+    margin: 30px 10px;
 }
 
 .logoAlura{
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    padding: 0px;
-    gap: 40px;
+    padding: 0;
+    position: relative;
+    left: 2%;
+    top: 5%;
+    display: inline;
+}
 
-    position: absolute;
-    width: 120px;
-    height: 48px;
-    left: 40px;
-    top: 40px;
+.cuadrado{
+    display: inline;
+    /*Agregado*/
+    position: relative;
 }
 
 #texto{
-    border: none;
-    position: absolute;
-    width: 700px;
-    height: 480px;
-    left: 240px;
-    top: 168px;
-
+    position: relative; /*La posicion relative sigue el orden de los elementos html*/
+    width: 50%;
+    height: 90%;
+    left: 15%;
+    top: 20%;
+    padding: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 150%;
     color: #0A3871; 
     border: none;
     outline: none;
     resize: none;
+    overflow: auto;
+    box-shadow: 2px 10px 32px 10px rgba(0, 0, 0, 0.19);
 }
 
 textarea::placeholder{
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
-    font-size: 32px;
+    font-size: 2rem;
     line-height: 150%;
     color: #0A3871; 
     border: none;
+}
+
+.adv-botones{
+    position: absolute;
+    left: 10%;
 }
 
 .advertencia{
     display: flex;
     flex-direction: row;
     align-items: center;
-    padding: 0px;
-    gap: 8px;
-
-    position: absolute;
-    width: 229px;
-    height: 18px;
-    left: 240px;
-    top: 661px;
+    gap: 0.5em;
+    padding: 15px 0;
+    position: relative;
 }
 
 #adv{
-    width: 205px;
-    height: 18px;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 150%;
-    color: #495057;
+    font-weight: bold;
+    font-size: 0.8rem;
     opacity: 0.8;
-    flex: none;
-    order: 1;
     flex-grow: 0;
+    width: auto;
 }
 
 .botones{
@@ -83,130 +79,93 @@ textarea::placeholder{
     align-items: flex-start;
     padding: 0px;
     gap: 24px;
-
-    position: absolute;
-    width: 680px;
-    height: 67px;
-    left: 240px;
-    top: 685px;
+    position: relative;
 }
 
 .botones #encriptar{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
-    gap: 8px;
-    width: 328px;
-    height: 67px;
     background: #0A3871;
+    border: 1px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 0;
-    flex-grow: 0;
     cursor: pointer;
 }
 
 #encriptarTxt{
     width: 280px;
-    height: 19px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     color: #FFFFFF;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .botones #desencriptar{
-    display: flex;
-    flex-direction: row;
-    align-items: flex-start;
     padding: 24px;
-    gap: 8px;
-    width: 328px;
-    height: 67px;
     background: #D8DFE8;
     border: 1px solid #0A3871;
     border-radius: 24px;
-    flex: none;
-    order: 1;
-    flex-grow: 0;
     cursor: pointer;
-    text-align: center;
 }
 
 #desencriptarTxt{
     width: 280px;
-    height: 19px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     color: #0A3871;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
 }
 
 .rectangulo{
-    position: absolute;
-    width: 400px;
-    height: 744px;
-    left: 1000px;
-    top: 40px;
+    position: absolute;/*absolute: Se posicione en relacion al elemeno padre*/
+    width: 350px;
+    height: 644px;
+    left: 70%;
+    top: 20px;
     background: #FFFFFF;
-
-    box-shadow: 12px 24px 32px -8px rgba(0, 0, 0, 0.09);
+    box-shadow: 2px 10px 32px 10px rgba(0, 0, 0, 0.19);
     border-radius: 32px;
+    border: none;
+
+    /*Agregado*/
+    max-width: 100%;
+    right: 0;
+    bottom: 0;
 }
 
 #rectText{
-    position: absolute;
-    width: 336px;
-    height: 581px;
-    left: 32px;
-    top: 32px;
+    width: auto;
+    height: auto;
+    /*left: 5%;
+    top: 10%;*/
+    margin: 20px;
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
     font-size: 24px;
-    line-height: 150%;
     color: #495057;
 }
 
 .rectangulo #muñeco{
-    position: absolute;
-    width: 336px;
-    height: 304px;
-    top: 43px;
+    width: 90%;
+    order: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 .rectangulo #mensaje{
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 0px;
     gap: 16px;
-
-    position: absolute;
-    width: 336px;
-    height: 122px;
-
-    top: 379px;
+    order: 2;
+    position: relative;
 }
 
 #text1{
-    width: 336px;
+    width: 100%;
     height: 58px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 700;
@@ -221,9 +180,8 @@ textarea::placeholder{
 }
 
 #text2{
-    width: 336px;
+    width: 100%;
     height: 48px;
-
     font-family: 'Inter';
     font-style: normal;
     font-weight: 400;
@@ -239,16 +197,16 @@ textarea::placeholder{
 
 #boton-copiar{
     box-sizing: border-box;
-    display: flex;
+    /*display: flex !important;
     flex-direction: row;
-    align-items: flex-start;
+    align-items: flex-start;*/
     padding: 24px;
-    gap: 8px;
     position: absolute;
     width: 336px;
     height: 67px;
-    left: 32px;
-    top: 645px;
+    left: 50%;
+    transform: translateX(-50%);
+    bottom: 45px;
     border: 1px solid #0A3871;
     border-radius: 24px;
 }
@@ -259,16 +217,45 @@ textarea::placeholder{
 }
 
 #txt-boton-copiar{
-    width: 288px;
-    height: 19px;
     font-family: 'Inter';
-    font-style: normal;
-    font-weight: 400;
     font-size: 16px;
-    line-height: 19px;
-    text-align: center;
     color: #0A3871;
-    flex: none;
-    order: 0;
-    flex-grow: 1;
+    text-align: center;
+}
+
+@media screen and (max-width: 1280px){
+    body {
+        width: 100%;
+        height: 100%;
+    }
+
+    #texto{
+        width: 70%;
+        left: 10%;
+    }
+
+    .botones {
+        flex-direction: column;
+        align-items: center;
+        left: 0%;
+        width: 100%;
+    }
+
+    .adv-botones{
+        position: relative;
+        left: 0%;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .rectangulo {
+        position: relative;
+        /*width: 350px;*/
+        width: 97%;
+
+        height: 744px;
+        left: 0%;
+        margin: 0 0 0 0;
+    }
 }

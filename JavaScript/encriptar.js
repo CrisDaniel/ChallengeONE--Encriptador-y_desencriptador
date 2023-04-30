@@ -94,7 +94,6 @@ function desencriptarTexto(){
   const botonCopiar = document.getElementById("boton-copiar");
   botonCopiar.style.display = 'block';
 
-
 	botonCopiar.addEventListener("click", () => {
 
     const seleccion = window.getSelection();
