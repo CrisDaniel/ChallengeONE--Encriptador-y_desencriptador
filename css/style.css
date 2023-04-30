@@ -239,6 +239,7 @@ textarea::placeholder{
         align-items: center;
         left: 0%;
         width: 100%;
+        text-transform: capitalize;
     }
 
     .adv-botones{
