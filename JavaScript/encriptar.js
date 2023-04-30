@@ -103,6 +103,11 @@ function desencriptarTexto(){
     seleccion.addRange(rango);
     
     // Copiar el texto seleccionado al portapapeles
+    //En chrome navigator.clipboard no funciona, si quieres abrirlo ingresa por el cmd como administrador y dirigete a:
+    //C:\Program Files\Google\Chrome\Application\chrome.exe         La ubicacion de tu chrome en C
+    //Dentro escribe esta linea de comando chrome.exe --enable-clipboard-features
+    //Se abrira chrome, ctrl + o para abrir tu index.html
+
     navigator.clipboard.writeText(desencriptado);
     
     // Deseleccionar el texto
